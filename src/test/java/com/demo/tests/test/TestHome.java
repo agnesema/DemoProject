@@ -12,10 +12,9 @@ public class TestHome extends BaseTest {
     HomePage homePage;
 
     @Test
-    public void TC001() throws IOException, InterruptedException {
+    public void TC001() throws IOException {
         homePage = new HomePage(driver);
         homePage.fillTheForm();
-        Thread.sleep(2000);
         Assert.assertEquals(homePage.getText(), "×\n" +
                 "Success! The Form has been submitted successfully!.", "Test not passed");
         System.out.println(homePage.getText());
