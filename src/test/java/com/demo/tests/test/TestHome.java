@@ -18,6 +18,7 @@ public class TestHome extends BaseTest {
         Assert.assertEquals(homePage.getText(), "×\n" +
                 "Success! The Form has been submitted successfully!.", "Test not passed");
         System.out.println(homePage.getText());
+        System.out.println("Hello");
 
     }
 }
